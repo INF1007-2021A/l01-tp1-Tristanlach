@@ -1,8 +1,13 @@
 def fizzBuzz(n):
-    # TODO imprimer la chaine de caractère appropriée avec la fonction print().
-    #  Assigner ensuite la valeur à la variable resultat
+    reponse = ""
+    if n %3 == 0 and n %5 == 0 :
+        reponse = "fizzBuzz"
+    elif n%5 == 0 :
+        reponse = "buzz"
+    elif n%3 == 0 :
+        reponse = "fizz"
 
-    resultat =
+    resultat = reponse
     return resultat
 
 if __name__ == '__main__':

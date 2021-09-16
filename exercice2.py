@@ -3,7 +3,7 @@ import math
 
 def resoudreEquation(a, b, c):
     # TODO: Calculer le discriminant et assigner la valeur dans la variable "delta"
-    delta = (b**2) - (4*a*c)
+    delta = (b ** 2) - (4 * a * c)
 
     # TODO: Déterminer la condition (bool) qui correspond à aucune solution de l'équation et mettre la valeur dans la variable "naPasDeSolution"
     naPasDeSolution = delta < 0
@@ -18,7 +18,7 @@ def resoudreEquation(a, b, c):
     if aUneSeuleSolution:
         print("Une seule racine")
         # TODO: assigner a la variable x1 la valeur de la racine
-        x1 = 0
+        x1 = -b / (2 * a)
         # ne pas modifier
         return x1
 
@@ -29,10 +29,10 @@ def resoudreEquation(a, b, c):
         # TODO: afficher sur l'écran "Deux racines"
         print("Deux racines")
         # TODO: calculer la premiere racine, assigner la a "x1"
-        x1 = math.sqrt(delta)
+        x1 = (-b + math.sqrt(delta)) / (2 * a)
 
         # TODO: calculer la deuxieme racine, assigner la a "x2"
-        x2 = -(math.sqrt(delta))
+        x2 = (-b - math.sqrt(delta)) / (2 * a)
 
         # ne pas modifier cette ligne
         return x1, x2

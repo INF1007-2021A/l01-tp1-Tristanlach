@@ -1,12 +1,11 @@
 def fizzBuzz(n):
     reponse = ""
     if n %3 == 0 and n %5 == 0 :
-        reponse = "fizzBuzz"
+        reponse = "fizzbuzz"
     elif n %5 == 0 :
         reponse = "buzz"
     elif n %3 == 0 :
         reponse = "fizz"
-
     else:
         resultat = n
 

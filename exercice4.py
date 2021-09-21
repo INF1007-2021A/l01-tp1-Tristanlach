@@ -9,7 +9,7 @@ def calculerPosition(positionInitiale, vitesseInitiale, duree, vitesseFinale):
     a = (vitesseFinale - vitesseInitiale)/duree
 
     # TODO calculer la position finale, assigner la valeur à la variable "positionFinale"
-    positionFinale = vitesseInitiale * (duree) + 0.5 * a * (duree)**2
+    positionFinale = (vitesseInitiale * (duree) + 0.5 * a * (duree)**2) + positionInitiale
 
     return positionFinale
 
